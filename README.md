@@ -18,6 +18,7 @@ get files from github, in the terminal type command: npm install
 
 ## Usage
 in the terminal type command: node .\index.js and fill in the prompts
+https://drive.google.com/file/d/1dav3fmkRSxZVgoGaSKaySlysc5t_bMLF/view
 
 ## licence
 MIT Licence
