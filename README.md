@@ -4,7 +4,7 @@
 ## Description
 an application at assist you create a readme file
 
-## Table of Contents (Optional)
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -21,6 +21,7 @@ in the terminal type command: node .\index.js and fill in the prompts
 
 ## licence
 MIT Licence
+https://opensource.org/license/mit-0/
 
 ## Credits
 NA
