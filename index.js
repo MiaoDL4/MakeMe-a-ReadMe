@@ -2,10 +2,10 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 const generateReadMe = ({ title, description, installation, usage, license, contributing, tests, github, email}) =>
-`# ${data.title}
+`# ${title}
 
 ## Description
-${data.description}
+${description}
 
 ## Table of Contents (Optional)
 
@@ -13,24 +13,26 @@ ${data.description}
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Test](#Test)
+- [Questions](#Questions)
 
 ## Installation
-${data.installation}
+${installation}
 
 ## Usage
-${data.usage}
-
-## licence
-${data.license}
+${usage}
 
 ## Credits
-${data.contributing}
+${contributing}
+
+## licence
+${license}
 
 ## Tests
-${data.tests}
+${tests}
 
-## Questions for ${data.github}
-if you have any question in regards to this project please email me at ${data.email}
+## Questions for ${github}
+if you have any question in regards to this project please email me at ${email} or find me at https://github.com/${data.github}
 `;
 
 inquirer
@@ -86,7 +88,7 @@ inquirer
         const readMe = generateReadMe(data);
 
         fs.writeFile('README.md', readMe, (err) =>
-          err ? console.log(err) : console.log('Successfully created index.html!')
+          err ? console.log(err) : console.log('Successfully created readme.md!')
         );
 
     });
